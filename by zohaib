@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="dataset-card.png" type="image/x-icon">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: transparent;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            gap: 30px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .facebook-btn {
+            background-color: #1877f2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .facebook-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .google-btn {
+            background-color: white;
+            color: black;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .apple-btn {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .apple-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .hr-line {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .hr-line::before,
+        .hr-line::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .hr-line::before {
+            margin-right: 10px;
+        }
+
+        .hr-line::after {
+            margin-left: 10px;
+        }
+
+        .login-main-btn {
+            background-color: #ff4081;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .signup-btn {
+            background-color: white;
+            color: black;
+            border: 1px solid #ddd;
+        }
+
+        .terms {
+            font-size: 12px;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .terms a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Login</h1>
+    
+    <button class="login-btn facebook-btn">
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+        Continue with Facebook
+    </button>
+    
+    <button class="login-btn google-btn">
+        <i class="fa-brands fa-google" style="color: #000000;"></i>
+        Continue with Google
+    </button>
+    
+    <button class="login-btn apple-btn">
+        <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+        Continue with Apple ID
+    </button>
+    
+    <div class="hr-line">or</div>
+    
+    <button class="login-btn login-main-btn">Login</button>
+    
+    <button class="login-btn signup-btn">Sign Up</button>
+    
+    <p class="terms">
+        By signing up, you agree to our 
+        <a href="#">Terms and Conditions</a> and 
+        <a href="#">Privacy Policy</a>.
+    </p>
+</div>
+
+</body>
+</html>
